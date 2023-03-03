@@ -134,17 +134,35 @@ $(function () {
         $('#contactHoverTwo').slideToggle().css({
             'display' : 'block',
         })
+        $('.fa-arrow-right-from-bracket').css({
+            'color': '#fff',
+            'padding': '20px',
+            'border-radius': '100%',
+            'background-color': '#974ae9',
+        })
     })
 
     $('article#contactBoxThree').hover(function () {
         $('#contactHoverThree').slideToggle().css({
             'display' : 'block',
         })
+        $('.fa-arrow-right-from-bracket').css({
+            'color': '#fff',
+            'padding': '20px',
+            'border-radius': '100%',
+            'background-color': '#974ae9',
+        })
     })
 
     $('article#contactBoxFour').hover(function () {
         $('#contactHoverFour').slideToggle().css({
             'display' : 'block',
+        })
+        $('.fa-arrow-right-from-bracket').css({
+            'color': '#fff',
+            'padding': '20px',
+            'border-radius': '100%',
+            'background-color': '#974ae9',
         })
     })
 
