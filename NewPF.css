@@ -409,11 +409,38 @@ body {
     padding-top: 50px;
 }
 
+.expeBox {
+    margin-bottom: 30px;
+}
+
 .expeBox h4 {
     width: 350px;
     font-size: 20px;
     padding: 10px 0px;
     /* margin: 50px auto; */
+    transition: all 0.2s ease-in-out;
+}
+
+.expeBox h4:hover {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #974ae9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px 0px #974ae9;
+}
+
+.expeBox h4:hover div {
+    display: none;
+}
+
+.expeBox h4 div {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right,
+            #974ae9,
+            #baaeff,
+            #974ae9);
 }
 
 .infoExpeBox {
@@ -480,6 +507,12 @@ body {
         padding: 0px 50px;
     }
 
+}
+
+@media screen and (max-width: 660px) {
+    .imgBoxExpe img{
+        height: auto;
+    }
 }
 
 /* -------- SECTION_EXPERIENCE FIN -------- */

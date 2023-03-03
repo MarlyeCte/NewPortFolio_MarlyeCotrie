@@ -1,7 +1,7 @@
 $(function () {
 
     $('span.responNavClick').click(function () {
-        $('article.navFixTopRespon').slideToggle(800);
+        $('article.navFixTopRespon').slideToggle();
         console.log('navRespon clicked');
     })
 
@@ -18,46 +18,45 @@ $(function () {
         }
     })
 
-    var isRotated = false;
-
-    $('h4.competClickDown').click(function () {
-        $('.fa-chevron-down').slideToggle(800, function () {
-            // Code to execute after animation completes
-            if (isRotated) {
-                $('.fa-chevron-down').css('transform', 'rotate(0deg)');
-                isRotated = false;
-            } else {
-                $('.fa-chevron-down').css('transform', 'rotate(180deg)');
-                isRotated = true;
-            }
-        });
-    });
+    // var isRotated = false;
 
     // $('h4.competClickDown').click(function () {
-    //     // $('.fa-chevron-down').slideToggle().css({
-    //     //     'transform': 'rotate(180deg)',
-    //     //     'color': 'red',
-    //     //     'display': 'inline-block'
-    //     // }).show();
-    //     // $('.fa-chevron-down').css({
-    //     //     'transform': 'rotate(180deg)',
-    //     //     'color': 'red',
-    //     //     // 'display': 'block'
-    //     // })
-    //     if ($('.fa-chevron-down').slideDown()) {
-    //         $('.fa-chevron-down').css({
-    //             'transform': 'rotate(180deg)',
-    //             'color': 'red',
-    //             'display': 'inline-block',
-    //         });
-    //     }
-    //     // else {
-    //     //     $('.fa-chevron-down').css({
-    //     //         'transform': 'rotate(0deg)',
-    //     //         'color': 'blue',
-    //     //     });
-    //     // }
+    //     $('.fa-chevron-down').slideToggle(800, function () {
+    //         // Code to execute after animation completes
+    //         if (isRotated) {
+    //             $('.fa-chevron-down').css('transform', 'rotate(0deg)');
+    //             isRotated = false;
+    //         } else {
+    //             $('.fa-chevron-down').css('transform', 'rotate(180deg)');
+    //             isRotated = true;
+    //         }
+    //     });
     // });
+
+    $('h4.competClickDown').click(function () {
+        // $('.fa-chevron-down').slideToggle().css({
+        //     'transform': 'rotate(180deg)',
+        //     'color': 'red',
+        //     'display': 'inline-block'
+        // }).show();
+        // $('.fa-chevron-down').css({
+        //     'transform': 'rotate(180deg)',
+        //     'color': 'red',
+        //     // 'display': 'block'
+        // })
+        if ($('.fa-chevron-down').slideDown()) {
+            $('.fa-chevron-down').css({
+                'transform': 'rotate(180deg)',
+                'display': 'inline-block',
+            });
+        }
+        // else {
+        //     $('.fa-chevron-down').css({
+        //         'transform': 'rotate(0deg)',
+        //         'color': 'blue',
+        //     });
+        // }
+    });
 
     $('h4.boxOneClick').click(function () {
         $('div.boxOne').slideToggle(800);
