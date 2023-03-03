@@ -1,0 +1,563 @@
+/* 
+#2600ff
+#291983 
+#4d1983
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(105, 105, 105);
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(246, 240, 255);
+}
+
+/*------DEBUT-ScrollBar et Selection------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #974ae9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #130a46;
+}
+
+::selection {
+    color: white;
+    background: #974ae9;
+}
+
+/*------FIN-ScrollBar et Selection------*/
+
+
+/* -------- HEADER NAV ALL DEBUT -------- */
+
+.navChangeBg {
+    transition: all 0.5s ease-in-out;
+}
+
+.navHeader {
+    width: 100%;
+    padding-right: 80px;
+}
+
+.navHeader a {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navFixTop {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.navAnim a:hover {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px #21083b;
+    text-decoration: underline;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right,
+            #a393ff,
+            #baaeff,
+            #974ae9,
+            #baaeff,
+            #a393ff);
+    transition: all 0.2s ease-in-out;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navHeader {
+        padding: 0;
+    }
+
+}
+
+/* -------- HEADER NAV ALL FIN -------- */
+
+/* -------- HEADER NAV / PLAN SITE DEBUT -------- */
+
+.navWeb {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.navRespon {
+    display: none;
+}
+
+.navItemRespon {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navWeb {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .navWeb {
+        display: none;
+    }
+
+    .navRespon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navRespon span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .navItemRespon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #baaeffa1;
+    }
+
+    .navFixTopRespon {
+        width: 100%;
+        position: sticky;
+        top: 73px;
+    }
+
+    .navItemRespon a {
+        background-color: whitesmoke;
+        width: 50%;
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+        position: sticky;
+        text-align: center;
+    }
+
+}
+
+/* -------- HEADER NAV / PLAN SITE FIN -------- */
+
+/* -------- HEADER HOME DEBUT -------- */
+
+.homeHeader {
+    margin: 100px 200px;
+    display: flex;
+    align-items: center;
+}
+
+.homeHeader img {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.homeHeaderTitle h1 {
+    color: rgb(105, 105, 105);
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+/* .homeHeaderTitle h2 {
+    width: 70%;
+} */
+
+@media screen and (max-width: 1300px){
+    .homeHeader {
+        margin: 100px 8%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .homeHeader img {
+        width: 60%;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .homeHeader {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .homeHeaderTitle h1{
+        font-size: 6vw;
+    }
+
+
+    .homeHeaderTitle h2{
+        font-size: 4vw;
+    }
+
+}
+
+@media  screen and (max-width: 450px){
+    
+    .homeHeaderTitle h1{
+        font-size: 9vw;
+    }
+
+
+    .homeHeaderTitle h2{
+        font-size: 6vw;
+    }
+
+}
+
+/* -------- HEADER HOME FIN -------- */
+
+/* -------- MAIN DEBUT -------- */
+
+/* main {
+
+} */
+
+.sectionContainer {
+    padding: 0px 8px;
+}
+
+.titleSection {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+/* -------- SECTION_A_PROPOS DEBUT -------- */
+
+.allAboutBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aboutBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 300px;
+    /* background-color: rgb(235, 222, 253); */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
+}
+
+.aboutBox i {
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 40px;
+    color: #974ae9;
+    background-color: #974ae927;
+}
+
+.aboutBox h4 {
+    font-size: 20px;
+}
+
+.aboutBox p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* -------- SECTION_A_PROPOS FIN -------- */
+
+/* -------- SECTION_COMPETENCES DEBUT -------- */
+
+.allCompetBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competClickDown {
+    text-align: center;
+    width: 350px;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.757);
+    box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
+}
+
+.competClickDown i {
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.competClickDown:active i {
+    /* transform: rotate(180deg); */
+}
+
+.fa-chevron-down {
+    transition: all 0.2s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.competClickDownInfo {
+    /* margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; */
+    display: none;
+}
+
+.competInfo {
+    max-width: 200px;
+    text-align: center;
+}
+
+.competInfo i {
+    font-size: 30px;
+}
+
+/* -------- SECTION_COMPETENCES FIN -------- */
+
+/* -------- SECTION_EXPERIENCE DEBUT -------- */
+
+.allBoxExpe {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.imgBoxExpe,
+.infoTextBoxExpe {
+    width: 40%;
+}
+
+.imgBoxExpe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+.imgBoxExpe img {
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
+}
+
+#imgExpeOne,
+#imgExpeTwo,
+#imgExpeThree {
+    display: none;
+    padding-top: 50px;
+}
+
+.expeBox h4 {
+    width: 350px;
+    font-size: 20px;
+    padding: 10px 0px;
+    /* margin: 50px auto; */
+}
+
+.infoExpeBox {
+    display: none;
+} 
+
+.infoExpeBox a {
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+    padding: 10px 0px;
+}
+
+.infoExpeBox a:hover {
+    color: #974ae9;
+    text-shadow: -3px 2px 3px #974ae9;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.infoExpeBox p {
+    padding-right: 50px;
+}
+
+.infoExpeBox span {
+    font-weight: bold;
+    color: #974ae9;
+}
+
+@media screen and (max-width: 1700px){
+
+    .imgBoxExpe {
+        height: 100%;
+    }
+
+    .imgBoxExpe img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .allBoxExpe {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgBoxExpe,
+    .infoTextBoxExpe {
+        width: 80%;
+    }
+
+    .expeBox {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .infoExpeBox p {
+        padding: 0px 50px;
+    }
+
+}
+
+/* -------- SECTION_EXPERIENCE FIN -------- */
+
+/* -------- SECTION_CONTACT DEBUT -------- */
+
+.allContactBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 200px;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 25px;
+    padding: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.757);
+    box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
+}
+
+#contactHoverOne,
+#contactHoverTwo,
+#contactHoverThree,
+#contactHoverFour {
+    display: none;
+}
+
+/* -------- SECTION_CONTACT FIN -------- */
+
+
+/* -------- MAIN FIN -------- */
+
+/* -------- FOOTER DEBUT -------- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
+
+}
+
+footer img {
+    width: 100px;
+}
+
+.navFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.navFooter h6 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.navFooter a {
+    text-align: start;
+}
+
+.navFooter a:hover {
+    text-decoration: underline;
+}
+
+/* -------- FOOTER FIN -------- */
