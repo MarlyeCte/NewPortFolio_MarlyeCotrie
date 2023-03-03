@@ -513,6 +513,10 @@ body {
     .imgBoxExpe img{
         height: auto;
     }
+
+    .infoExpeBox p {
+        padding: 0px;
+    }
 }
 
 /* -------- SECTION_EXPERIENCE FIN -------- */
