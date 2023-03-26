@@ -18,6 +18,13 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ],
+    "detect-css-reflows/layout": "off"
   }
 }

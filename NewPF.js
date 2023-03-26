@@ -18,47 +18,14 @@ $(function () {
         }
     })
 
-    // var isRotated = false;
+    // ----------Section Competence---------- DEBUT ----------  //
 
     // $('h4.competClickDown').click(function () {
-    //     $('.fa-chevron-down').slideToggle(800, function () {
-    //         // Code to execute after animation completes
-    //         if (isRotated) {
-    //             $('.fa-chevron-down').css('transform', 'rotate(0deg)');
-    //             isRotated = false;
-    //         } else {
-    //             $('.fa-chevron-down').css('transform', 'rotate(180deg)');
-    //             isRotated = true;
-    //         }
-    //     });
+    //     $('.competChevronOne').slideToggle();
     // });
 
-    $('h4.competClickDown').click(function () {
-        // $('.fa-chevron-down').slideToggle().css({
-        //     'transform': 'rotate(180deg)',
-        //     'color': 'red',
-        //     'display': 'inline-block'
-        // }).show();
-        // $('.fa-chevron-down').css({
-        //     'transform': 'rotate(180deg)',
-        //     'color': 'red',
-        //     // 'display': 'block'
-        // })
-        if ($('.fa-chevron-down').slideDown()) {
-            $('.fa-chevron-down').css({
-                'transform': 'rotate(180deg)',
-                'display': 'inline-block',
-            });
-        }
-        // else {
-        //     $('.fa-chevron-down').css({
-        //         'transform': 'rotate(0deg)',
-        //         'color': 'blue',
-        //     });
-        // }
-    });
-
     $('h4.boxOneClick').click(function () {
+        $('.competChevronOne').slideToggle();
         $('div.boxOne').slideToggle(800);
         $('div.boxOne').css({
             'margin-top': '40px',
@@ -72,11 +39,11 @@ $(function () {
     })
 
     $('h4.boxTwoClick').click(function () {
+        $('.competChevronTwo').slideToggle();
         $('div.boxTwo').slideToggle(800);
         $('div.boxTwo').css({
             'margin-top': '40px',
             'margin': 'auto',
-            'width': '80%',
             'display': 'flex',
             'flex-wrap': 'wrap',
             'justify-content': 'center',
@@ -84,39 +51,37 @@ $(function () {
         });
     })
 
-    $('h4#expeBoxOneClick').click(function () {
-        $('#expeBoxOne').slideToggle().css({
-            'display' : 'flex',
-            'flex-direction': 'column',
-            'gap': '10px',
-        });
-        $('img#imgExpeOne').slideToggle().css({
-            'display' : 'flex',
+    // ----------Section Competence---------- FIN ----------  //
+
+    // ----------Section Experience---------- DEBUT ----------  //
+
+    $('h4#btnDescExpeOneClick').click(function () {
+        $('article#descExpoOneInfo').slideToggle().css({
+            'display': 'block',
+            'background-color' : 'rgb(33 8 59 / 81%)',
+            'border-radius' : '20px',
         });
     })
 
-    $('h4#expeBoxTwoClick').click(function () {
-        $('#expeBoxTwo').slideToggle().css({
-            'display' : 'flex',
-            'flex-direction': 'column',
-            'gap': '10px',
-        });
-        $('img#imgExpeTwo').slideToggle().css({
-            'display' : 'block',
-            'margin-bottom': '200px',
+    $('h4#btnDescExpeTwoClick').click(function () {
+        $('article#descExpoTwoInfo').slideToggle().css({
+            'display': 'block',
+            'background-color' : 'rgb(33 8 59 / 81%)',
+            'border-radius' : '20px',
         });
     })
 
-    $('h4#expeBoxThreeClick').click(function () {
-        $('#expeBoxThree').slideToggle().css({
-            'display' : 'flex',
-            'flex-direction': 'column',
-            'gap': '10px',
-        });
-        $('img#imgExpeThree').slideToggle().css({
-            'display' : 'block',
+    $('h4#btnDescExpeThreeClick').click(function () {
+        $('article#descExpoThreeInfo').slideToggle().css({
+            'display': 'block',
+            'background-color' : 'rgb(33 8 59 / 81%)',
+            'border-radius' : '20px',
         });
     })
+
+    // ----------Section Experience---------- FIN ----------  //
+
+    // ----------Section Contact---------- DEBUT ----------  //
 
     $('article#contactBoxOne').hover(function () {
         $('#contactHoverOne').slideToggle().css({
@@ -165,5 +130,7 @@ $(function () {
             'background-color': '#974ae9',
         })
     })
+
+    // ----------Section Contact---------- FIN ----------  //
 
 })

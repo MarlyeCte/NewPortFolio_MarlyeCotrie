@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="NewPF.css">
     <title>Marlye Cotrie NewPortFolio</title>
-    <link rel="shortcut icon" href="/MeufPc.png" />
+    <link rel="shortcut icon" href="images/MeufPc.png" />
 </head>
 <body>
 
@@ -39,7 +39,7 @@
             <h1>Je suis Marlye Cotrie</br>Développeuse Web</h1>
             <h2>Développeuse de site internet responsive, création de logo / flyers / carte de visite.</h2>
         </article>
-        <img src="MeufPc.png" alt="LogoMarlyeCotrie">
+        <img src="images/MeufPc.png" alt="LogoMarlyeCotrie">
     </section>
 
     <main>
@@ -80,7 +80,7 @@
                 <article class="allCompetBox">
 
                     <article class="competBox">
-                        <h4 class="competClickDown boxOneClick">Compétences personnelles <i class="fa-solid fa-chevron-down"></i></h4>
+                        <h4 class="competClickDown boxOneClick">Compétences personnelles <i class="fa-solid fa-chevron-down competChevronOne"></i></h4>
                         <div class="competClickDownInfo boxOne">
 
                             <div class="competInfo">
@@ -137,7 +137,7 @@
                     </article>
 
                     <article class="competBox">
-                        <h4 class="competClickDown boxTwoClick">Compétences techniques <i class="fa-solid fa-chevron-down"></i></h4>
+                        <h4 class="competClickDown boxTwoClick">Compétences techniques <i class="fa-solid fa-chevron-down competChevronTwo"></i></h4>
                         <div class="competClickDownInfo boxTwo">
 
                             <div class="competInfo">
@@ -179,53 +179,57 @@
 
                 <article class="allBoxExpe">
 
-                    <article class="imgBoxExpe">
-                        <h4>Cliquer sur mes experiences afin d'avoir plus de détail</h4>
-                        <img id="imgExpeOne" src="Site_Philocks.png" alt="">
-                        <img id="imgExpeTwo" src="Site_FairMakers.png" alt="">
-                        <img id="imgExpeThree" src="decorFrdustyle.png" alt="">
-                    </article>
+                    <article class="expeBox" id="expeBoxOne">
+                        <!-- <img src="Site_Philocks.png" alt="Site Phi'locks"> -->
+                        <article class="descExpeBox" id="descExpeOne">
+                            <h4>Développement Web 2022</h4>
+                            <h4><a href="https://www.philocks.fr/" target="_blank">Phi'locks</a></h4>
+                            <h4 class="styleBtnExpoClick" id="btnDescExpeOneClick">Détail</h4>
 
-                    <article class="infoTextBoxExpe">
-
-                        <article class="expeBox">
-                            <h4 id="expeBoxOneClick">Développement Web 2022
-                                <div></div>
-                            </h4>
-                            <div id="expeBoxOne" class="infoExpeBox">
-                                <a href="https://www.philocks.fr/" target="_blank">Phi'locks : Avril 2022</a>
-                                <p>Refonte du site Phi'locks.
-                                    Cahier des charges, maquette afin de commencer la phase de production, puis les tests. Après l'approbation de la cliente, j'ai pu déployer le site.</p>
-                                <span>Stack utiliser : NEXT.JS / HTML / CSS</span>
-                            </div>
-                        </article>
-
-                        <article class="expeBox">
-                            <h4 id="expeBoxTwoClick">Développement Web 2021
-                                <div></div>
-                            </h4>
-                            <div id="expeBoxTwo" class="infoExpeBox">
-                                <a href="https://www.fairmakers.com/" target="_blank">Fairmakers : Septembre 2021</a>
-                                <p>Refonte du site de l'entreprise avec une équipe afin de valider nos compétences acquises.
-                                Nous devions reproduire à l'identique leur site déjà existant afin de tester notre capacité à travailler en équipe.</p>
-                                <span>Stack utiliser : JAVASCRIPT / HTML / CSS</span>
-                            </div>
-                        </article>
-
-                        <article class="expeBox">
-                            <h4 id="expeBoxThreeClick">Apprentie Ébéniste 2017 / 2018
-                                <div></div>
-                            </h4>
-                            <div id="expeBoxThree" class="infoExpeBox">
-                                <a href="https://goo.gl/maps/74VF4HZ7gjbhqm7G7" target="_blank">La Française du Style : Janvier 2018</a>
-                                <a href="https://www.decorasol.fr/" target="_blank">Décorasol : Décembre 2017</a>
-                                <p>Conception de meubles et plans de travail.
-                                    Restauration de meubles : ponçage et vernissage.
-                                    Conception et réalisation d'une table basse.</p>
-                            </div>
+                            <article class="descExpeBoxInfo" id="descExpoOneInfo">
+                                <h4>Refonte du site Phi'locks avec maintien et
+                                    mise à jour régulière du calendrier de
+                                    réservation.</br>
+                                    Réalisation : Cahier Des Charge / Maquette /
+                                    Production UX UI Design / Intégration /
+                                    Déploiement.
+                            </article>
                         </article>
 
                     </article>
+
+                    <article class="expeBox" id="expeBoxTwo">
+                        <!-- <img src="Site_Philocks.png" alt="Site Phi'locks"> -->
+                        <article class="descExpeBox" id="descExpeTwo">
+                            <h4>Développement Web 2021</h4>
+                            <h4><a href="https://www.fairmakers.com/" target="_blank">Fairmakers</a></h4>
+                            <h4 class="styleBtnExpoClick" id="btnDescExpeTwoClick">Détail</h4>
+
+                            <article class="descExpeBoxInfo" id="descExpoTwoInfo">
+                                <h4>Reproduction conforme de leurs site web
+                                    officiel effectuez en équipe.</br>
+                                    Réalisation : Méthodologie Agile Scrum /
+                                    Production UX UI Design / Aboutissement.
+                                    </h4>
+                            </article>
+                        </article>
+                    </article>
+
+                    <article class="expeBox" id="expeBoxThree">
+                        <!-- <img src="Site_Philocks.png" alt="Site Phi'locks"> -->
+                        <article class="descExpeBox" id="descExpeThree">
+                            <h4>Apprentie Ébéniste 2017 / 2018</h4>
+                            <h4><a href="https://goo.gl/maps/74VF4HZ7gjbhqm7G7" target="_blank">La Française du Style : Janvier 2018</a></h4>
+                            <h4><a href="https://www.decorasol.fr/" target="_blank">Décorasol : Décembre 2017</a></h4>
+                            <h4 class="styleBtnExpoClick" id="btnDescExpeThreeClick">Détail</h4>
+
+                            <article class="descExpeBoxInfo" id="descExpoThreeInfo">
+                                <h4>Conception et réalisation de meubles et plans
+                                    de travail en bois.</h4>
+                            </article>
+                        </article>
+                    </article>
+
                 </article>
             </article>
         </section>
@@ -277,7 +281,7 @@
     </main>
 
     <footer>
-        <img src="MeufPc.png" alt="LogoMarlyeCotrie">
+        <img src="images/MeufPc.png" alt="LogoMarlyeCotrie">
         <nav class="navFooter">
             <h6>Plan Du Site</h6>
             <a href="#">Accueil</a>
