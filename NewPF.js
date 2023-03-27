@@ -60,6 +60,7 @@ $(function () {
             'display': 'block',
             'background-color' : 'rgb(33 8 59 / 81%)',
             'border-radius' : '20px',
+            // 'overflow-y' : 'scroll'
         });
     })
 
@@ -68,6 +69,7 @@ $(function () {
             'display': 'block',
             'background-color' : 'rgb(33 8 59 / 81%)',
             'border-radius' : '20px',
+            // 'overflow-y' : 'scroll'
         });
     })
 
@@ -76,6 +78,7 @@ $(function () {
             'display': 'block',
             'background-color' : 'rgb(33 8 59 / 81%)',
             'border-radius' : '20px',
+            // 'overflow-y' : 'scroll'
         });
     })
 

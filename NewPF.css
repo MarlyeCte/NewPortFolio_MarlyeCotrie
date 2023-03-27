@@ -423,7 +423,8 @@ body {
     gap: 10px;
 }
 
-.descExpeBox h4 {
+.descExpeBox h4,
+.descExpeBox span {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 1px #21083b;
     font-size: 20px;
@@ -478,6 +479,11 @@ body {
     padding: 20px;
 }
 
+#descExpoOneInfo,
+#descExpoTwoInfo {
+    overflow-y: scroll;
+}
+
 @media screen and (max-width: 450px) {
     
     .expeBox {
@@ -489,7 +495,6 @@ body {
     #expeBoxThree {
         width: 90% !important;
         min-height: 200px;
-        height: auto;
     }
 
 }
