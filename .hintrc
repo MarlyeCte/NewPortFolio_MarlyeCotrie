@@ -25,6 +25,7 @@
         "duplicate-id": "off"
       }
     ],
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "axe/text-alternatives": "off"
   }
 }

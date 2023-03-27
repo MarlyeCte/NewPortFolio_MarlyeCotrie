@@ -380,6 +380,12 @@ body {
 
 /* -------- SECTION_EXPERIENCE DEBUT -------- */
 
+.allInfoExpe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .allBoxExpe {
     display: flex;
     justify-content: center;
@@ -482,6 +488,44 @@ body {
 #descExpoOneInfo,
 #descExpoTwoInfo {
     overflow-y: scroll;
+}
+
+.btnCv {
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px 5px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,
+            #974ae9,
+            #a393ff,
+            #baaeff,
+            #974ae9,
+            #baaeff,
+            #a393ff,
+            #974ae9);
+    transition: all 0.2s ease-in-out;
+    background-size: 400% 400%;
+}
+
+.btnCv:hover {
+    transform: scale(1.1);
+    animation: gradient 5s ease infinite;
+}
+
+.btnCv a {
+    font-size: 22px;
+    padding: 20px 50px;
+    border-radius: 20px;
+    transition: all 0.1s ease-in-out;
+    background-color: white;
+}
+
+.btnCv a:hover {
+    text-shadow: 2px 2px 3px gray;
+}
+
+.btnCv a:hover::before {
+    content: "#";
 }
 
 @media screen and (max-width: 450px) {
