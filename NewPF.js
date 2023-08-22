@@ -25,11 +25,13 @@ $(function () {
     // });
 
     $('h4.boxOneClick').click(function () {
-        $('.competChevronOne').slideToggle();
+        $('.competChevronOne').toggleClass('chevron-visible');
         $('div.boxOne').slideToggle(800);
         $('div.boxOne').css({
             'margin-top': '40px',
-            'margin': 'auto',
+            'margin-right': 'auto',
+            'margin-bottom': '40px',
+            'margin-left': 'auto',
             'width': '80%',
             'display': 'flex',
             'flex-wrap': 'wrap',
@@ -39,11 +41,14 @@ $(function () {
     })
 
     $('h4.boxTwoClick').click(function () {
-        $('.competChevronTwo').slideToggle();
+        $('.competChevronTwo').toggleClass('chevron-visible');
         $('div.boxTwo').slideToggle(800);
         $('div.boxTwo').css({
             'margin-top': '40px',
-            'margin': 'auto',
+            'margin-right': 'auto',
+            'margin-bottom': '40px',
+            'margin-left': 'auto',
+            'width': '80%',
             'display': 'flex',
             'flex-wrap': 'wrap',
             'justify-content': 'center',
@@ -81,6 +86,15 @@ $(function () {
             // 'overflow-y' : 'scroll'
         });
     })
+
+    $(document).ready(function() {
+        $('.click-link-stage').click(function () {
+            return confirm("Vous allez être redirigé(e) sur une autre page afin de visualiser le site de l'entreprise");
+        });
+        $(".cv-link").click(function() {
+            return confirm("Vous allez être redirigé(e) sur une autre page afin de visualiser mon CV");
+        });
+    });
 
     // ----------Section Experience---------- FIN ----------  //
 
@@ -133,6 +147,12 @@ $(function () {
             'background-color': '#974ae9',
         })
     })
+
+    $(document).ready(function() {
+        $('.clickInfoReseaux').click(function() {
+            return confirm("Vous êtes sur le point d'ouvrir une nouvelle page pour accéder au contenu que vous avez cliqué");
+        })
+    });
 
     // ----------Section Contact---------- FIN ----------  //
 

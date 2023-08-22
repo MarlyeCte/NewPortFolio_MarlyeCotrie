@@ -60,6 +60,9 @@ body {
 .navHeader {
     width: 100%;
     padding-right: 80px;
+    font-size: 30px;
+    position: relative; /* Ajoutez cette ligne */
+    z-index: 1000;
 }
 
 .navHeader a {
@@ -148,6 +151,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 99;
     }
 
     .navRespon span {
@@ -164,7 +168,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         background-color: #baaeffa1;
     }
 
@@ -195,6 +199,7 @@ body {
 .homeHeader {
     margin: 100px 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -340,8 +345,8 @@ body {
 }
 
 .competClickDown i {
-    margin-left: 10px;
-    transition: all 0.2s ease-in-out;
+    position: relative; /* Ajoutez cette ligne */
+    z-index: 1;
 }
 
 .fa-chevron-down {
@@ -360,6 +365,15 @@ body {
 
 .competInfo i {
     font-size: 30px;
+}
+
+.chevron-visible .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.competChevronOne.chevron-visible,
+.competChevronTwo.chevron-visible {
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 400px) {
