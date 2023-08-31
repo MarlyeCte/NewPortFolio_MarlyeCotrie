@@ -45,7 +45,7 @@ body {
 
 ::selection {
     color: rgb(255, 255, 255);
-    background: #974ae9;
+    background: #6f36ab;
 }
 
 /*------FIN-ScrollBar et Selection------*/
@@ -305,12 +305,20 @@ body {
     box-shadow: 0 30px 40px 0 rgb(145 150 203 / 20%);
 }
 
+.aboutBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #974ae927;
+    position: relative;
+}
+
 .aboutBox i {
     font-size: 30px;
-    padding: 25px 20px;
-    border-radius: 40px;
     color: #974ae9;
-    background-color: #974ae927;
+    position: absolute;
 }
 
 .aboutBox h4 {
